@@ -57,6 +57,7 @@ class LinkedAndWrapped extends FormatterBase {
    * {@inheritdoc}
    */
   public function settingsForm(array $form, FormStateInterface $form_state) {
+    $form = parent::settingsForm($form, $form_state);
     $heading_options = [
       'span' => 'span',
       'div' => 'div',
